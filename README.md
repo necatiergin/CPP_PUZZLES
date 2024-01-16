@@ -1,6 +1,6 @@
 # CPP PUZZLES
 
-All questions should be based on the **C++20** standard.
+All questions are based on the **C++20** standard.
 The answer to all of these questions must be one of the following options:
 
 - syntax error
