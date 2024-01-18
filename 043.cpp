@@ -1,0 +1,18 @@
+//difficulty : medium
+
+#include <iostream>
+
+struct Nec {
+	Nec() { std::cout << 'N'; }
+	~Nec() { std::cout << 'n'; }
+	Nec(const Nec&) { std::cout << 'C'; }
+	Nec(Nec&&) { std::cout << 'M'; }
+};
+
+void foo(Nec) {}
+Nec bar() { return Nec{}; }
+
+int main()
+{
+	foo(bar());
+}
