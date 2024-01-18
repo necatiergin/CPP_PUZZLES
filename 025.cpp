@@ -1,6 +1,6 @@
-**difficulty level:** [**easy**] [medium] [hard] [very hard]
-
 ```cpp
+//difficulty level: easy
+
 #include <map>
 #include <iostream>
 
