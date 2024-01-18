@@ -1,0 +1,17 @@
+```
+//difficulty level: easy
+
+#include <iostream>
+
+struct Nec {
+	operator bool()const noexcept
+	{
+		return true;
+	}
+};
+
+int main()
+{
+	std::cout << Nec{} + Nec{};
+}
+```
