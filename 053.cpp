@@ -1,0 +1,26 @@
+#include <iostream>
+
+namespace nec {
+	struct S{
+		operator int()const { return 1; }
+	};
+	void foo(S) { std::cout << 1;}
+}
+
+namespace erg
+{
+	using nec::foo;
+}
+
+void foo(int)
+{
+	std::cout << 2;
+}
+
+int main(void)
+{
+	nec::S s{};
+	erg::foo(s);
+	foo(s);
+	(foo)(s);
+}
